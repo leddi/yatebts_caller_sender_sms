@@ -58,9 +58,9 @@ function send_sms($error = null, $note = null)
                 nib_note($note);
 
         $fields = array(
-                "called"=> array("comment"=>"The IMSI where the SMS will be send.","column_name"=>"IMSI - Ziel"),
+                "called"=> array("comment"=>"The IMSI where the SMS will be send.","column_name"=>"IMSI - Empfänger"),
 /* ***************** N E U *********************** */
-                "caller"=> array("comment"=>"Die MSISDN des Senders.","column_name"=>"MSISDN - Sender"),
+                "caller"=> array("comment"=>"Die MSISDN des Senders.","column_name"=>"MSISDN - Absender"),
 /* ***************** N E U *********************** ENDE */
 
                 "text" => array("column_name"=>"Message", "display"=>"textarea", "comment"=>"The message can be text or RPDU."),
